@@ -44,21 +44,27 @@ echo "Downloading SD 1.5 base model"
 cd /workspace/ComfyUI/models/checkpoints
 wget https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned.safetensors
 
+wget https://civitai.com/api/download/models/361593 -O realvisxlV40_v40LightningBakedvae.safetensors
+wget https://civitai.com/api/download/models/471120 -O Juggernaut_X_RunDiffusion_Hyper.safetensors
+wget https://civitai.com/api/download/models/351306 -O dreamshaperXL_v21TurboDPMSDE.safetensors
+wget https://civitai.com/api/download/models/143906 -O epicrealism_naturalSinRC1VAE.safetensors
+wget https://civitai.com/api/download/models/125771 -O toonyou_beta6.safetensors
+
 #echo "Downloading Deliberate v2 model"
 #wget -O deliberate_v2.safetensors https://huggingface.co/XpucT/Deliberate/resolve/main/Deliberate_v2.safetensors
 
-echo "Downloading SDXL base model"
-wget https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0.safetensors
+#echo "Downloading SDXL base model"
+#wget https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0.safetensors
 
-echo "Downloading SDXL Refiner"
-wget https://huggingface.co/stabilityai/stable-diffusion-xl-refiner-1.0/resolve/main/sd_xl_refiner_1.0.safetensors
+#echo "Downloading SDXL Refiner"
+#wget https://huggingface.co/stabilityai/stable-diffusion-xl-refiner-1.0/resolve/main/sd_xl_refiner_1.0.safetensors
 
 echo "Downloading SD 1.5 VAE"
 cd /workspace/ComfyUI/models/vae
 wget https://huggingface.co/stabilityai/sd-vae-ft-mse-original/resolve/main/vae-ft-mse-840000-ema-pruned.safetensors
 
-echo "Downloading SDXL VAE"
-wget https://huggingface.co/madebyollin/sdxl-vae-fp16-fix/resolve/main/sdxl_vae.safetensors
+#echo "Downloading SDXL VAE"
+#wget https://huggingface.co/madebyollin/sdxl-vae-fp16-fix/resolve/main/sdxl_vae.safetensors
 
 echo "Downloading SD 1.5 ControlNet models"
 cd /workspace/ComfyUI/models/controlnet
@@ -73,10 +79,10 @@ wget https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11f
 echo "Downloading SDXL ControlNet models"
 wget https://huggingface.co/lllyasviel/sd_control_collection/resolve/main/diffusers_xl_canny_full.safetensors
 
-echo "Downloading Upscalers"
-cd /workspace/ComfyUI/models/upscale_models
-wget https://huggingface.co/ashleykleynhans/upscalers/resolve/main/4x-UltraSharp.pth
-wget https://huggingface.co/ashleykleynhans/upscalers/resolve/main/lollypop.pth
+# echo "Downloading Upscalers"
+# cd /workspace/ComfyUI/models/upscale_models
+# wget https://huggingface.co/ashleykleynhans/upscalers/resolve/main/4x-UltraSharp.pth
+# wget https://huggingface.co/ashleykleynhans/upscalers/resolve/main/lollypop.pth
 
 echo "Creating log directory"
 mkdir -p /workspace/logs
