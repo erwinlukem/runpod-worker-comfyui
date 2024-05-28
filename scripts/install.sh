@@ -32,6 +32,11 @@ git clone https://github.com/ltdrdata/ComfyUI-Manager.git custom_nodes/ComfyUI-M
 cd custom_nodes/ComfyUI-Manager
 pip3 install -r requirements.txt
 
+echo "Installing ReActor Node"
+git clone https://github.com/Gourieff/comfyui-reactor-node.git custom_nodes/comfyui-reactor-node
+cd custom_nodes/comfyui-reactor-node 
+pip3 install -r requirements.txt
+
 echo "Installing RunPod Serverless dependencies"
 pip3 install huggingface_hub runpod
 
@@ -39,8 +44,8 @@ echo "Downloading SD 1.5 base model"
 cd /workspace/ComfyUI/models/checkpoints
 wget https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned.safetensors
 
-echo "Downloading Deliberate v2 model"
-wget -O deliberate_v2.safetensors https://huggingface.co/XpucT/Deliberate/resolve/main/Deliberate_v2.safetensors
+#echo "Downloading Deliberate v2 model"
+#wget -O deliberate_v2.safetensors https://huggingface.co/XpucT/Deliberate/resolve/main/Deliberate_v2.safetensors
 
 echo "Downloading SDXL base model"
 wget https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0.safetensors
